@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App-with hardcoded api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-heading">Weather App</h1>
+    <form class="form" onsubmit="getWeather(); return false">
+    <label>Enter Your City Name : <input type="text" id="city-name"></label><br><br>
+    <button type="submit">Get Weather</button>
+</form>
+
+<div id="result">
+    <!-- Weather data will be apper here -->
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
