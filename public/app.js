@@ -3,7 +3,7 @@
 
 window.getWeather = function () {
     let cityName = document.getElementById("city-name").value;
-    axios.get(`http://172.28.208.1:3000/weather/${cityName}/`)
+    axios.get(`https://hardcodedapi-production.up.railway.app/weather/${cityName}/`)
         .then(response => {
             console.log(response.data);
             let result = document.getElementById("result");
